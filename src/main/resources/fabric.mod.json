@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "ghostskin",
+  "version": "${version}",
+  "name": "Player Skin Transparency: FabricMC",
+  "description": "Prevents the player skin alpha channel from being discarded. #DropPlayer",
+  "authors": [
+    "saturniidae"
+  ],
+  "contact": {
+    "website": "satyrn.dev"
+  },
+  "license": "MIT",
+  "icon": "assets/ghostskin/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.satyrn.ghostskin.GhostSkinMod"
+    ]
+  },
+  "mixins": [
+    "ghostskin.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21",
+    "fabric-api": "*",
+    "java": ">=21"
+  },
+  "conflicts": {
+    "firstperson": "*",
+    "armored-elytra": "*",
+    "cpm ": "*"
+  }
+}

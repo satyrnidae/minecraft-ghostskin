@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "ghostskin",
+    "version": "${version}",
+    "metadata": {
+      "name": "Ghost Skin",
+      "description": "A very simple mod that allows player skins to have transparency.",
+      "contributors": {
+        "Isabel Maskrey": "Author"
+      },
+      "icon": "icon.png"
+    },
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "entrypoints": {
+      "client_init": [
+        "dev.satyrn.ghostskin.quilt.client.GhostSkinModQuiltClient"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.19.2"
+      },
+      {
+        "id": "architectury",
+        "version": ">=6.6.92"
+      }
+    ]
+  },
+  "mixin": [
+    "ghostskin.common.mixins.json"
+  ]
+}
