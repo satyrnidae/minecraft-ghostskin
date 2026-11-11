@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "dev.satyrn.ghostskin.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"client": [
+		"SkinTextureDownloaderMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
